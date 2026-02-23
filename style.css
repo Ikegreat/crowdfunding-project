@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+@font-face {
+    font-family: Great1;
+    src: url(Commissioner-Bold.ttf);
+}
+body {
+    font-family: Great1;  
+}
+#background-img {
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+#right-header {
+    button {
+        border: 0px;
+        background: transparent;
+        cursor: pointer;
+    }
+    img {
+        width: 20px;
+    }
+}
+#parentMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+}
+#parentMenu.active {
+    display: flex;
+}
+#childMenu {
+    background-color:white;
+    width: 90%;
+    padding: 15px 2px;
+    border-radius: 12px;
+    margin-top: 60px;
+    li {
+        padding: 10px ;
+        list-style-type: none;
+        border-bottom: 1px solid rgba(20, 19, 19, 0.219);     
+    }
+    li:hover {
+        background-color: rgba(209, 199, 199, 0.563);
+    }
+}
+#remove {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 30px;
+}
+main {
+    padding: 20px;
+}
+#hero-section-box {
+   width: 330px;
+   margin: 0 auto;
+   background-color: white;
+   box-shadow: grey 2px 2px 3px 1px;
+   border-radius: 5px;
+   padding: 20px;
+   position: relative;
+   top: -70px;
+   margin-bottom: 20px;
+   text-align: center;
+   h2 {
+    margin-top: -30px;
+   }
+
+}
+#logo {
+    position: relative;
+    top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descripiton-text {
+    color: hsl(0, 0%, 48%);
+    margin-top: 20px;
+}
+.bookmark-area {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 12px;
+    cursor: pointer;
+}
+#project {
+    background-color: hsl(176, 72%, 28%);
+    padding: 15px 30px;
+    border-radius: 999px;
+    color: white;
+}
