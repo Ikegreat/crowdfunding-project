@@ -11,7 +11,9 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     parentMenu.classList.remove("active")
     openBtn.style.display = "flex"
+    
 })
 bookmarkBtn.addEventListener("click", () => {
     bookmarkBtn.classList.toggle("active")
+    
 })
