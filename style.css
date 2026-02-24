@@ -113,9 +113,33 @@ main {
     margin-top: 12px;
     cursor: pointer;
 }
+#bookmarkBtn.active {
+    width: 90%;
+    background-color: hsl(176, 72%, 28%);
+    padding: 9px;
+    border-radius: 999px;
+    overlay: red;
+}
 #project {
     background-color: hsl(176, 72%, 28%);
     padding: 15px 30px;
     border-radius: 999px;
     color: white;
+}
+#stats {
+    margin-bottom: 20px;
+    span {
+        font-weight: 200;
+        color: hsl(0, 0%, 48%);
+        font-size: 12px;
+        margin-top: 10px;
+        
+        
+    }
+}
+#border {
+    border: 1px solid hsl(0, 0%, 48%);
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
