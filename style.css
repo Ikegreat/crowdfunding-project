@@ -168,7 +168,41 @@ main {
     padding: 20px;
     border-radius: 7px;
     text-align: left; 
+    margin-top: 20px;
 }
 #colored-text {
-    color: hsl(176, 72%, 28%);
+    color: hsl(176, 50%, 47%);
+    margin-top: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+#fig-stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#left-txt {
+    color: hsl(0, 0%, 48%);
+    font-size: 14px;
+}
+#reward-btn {
+    button {
+        padding: 15px;
+        border-radius: 999px;
+        border: 0;
+        background-color: hsl(176, 50%, 47%);
+        color: white;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+#reward-btn:hover button {
+    background-color: hsl(176, 72%, 28%);
+}
+#colored-article {
+    color: hsl(0, 0%, 48%);
+     font-size: 13px;
+        margin-bottom: 20px;
+        color: hsl(0, 0%, 48%);
+        line-height: 20px;
 }
