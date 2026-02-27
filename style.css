@@ -302,3 +302,37 @@ border: 2px solid hsl(176, 72%, 28%);
 #light-color {
     color: hsl(0, 0%, 48%);
 }
+#pledge-container-input {
+    border-top: 1px solid hsl(0, 0%, 48%);
+    margin-top: 20px;
+    display: none;
+    width: 105%;
+    text-align: center;
+    h5 {
+        margin-bottom: 12px;
+    }
+}
+#right-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    button {
+        border-radius: 999px;
+        border: 0px;
+        padding: 12px;
+        color: white;
+        background-color: hsl(176, 72%, 28%);
+        font-size: 15px;
+    }
+    input {
+        border-radius: 999px;
+        border: 1px solid hsl(0, 0%, 48%);
+        padding: 10px;
+        
+        
+    }
+}
+#pledge-container-input.active {
+    display: block;
+}

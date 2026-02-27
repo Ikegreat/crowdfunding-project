@@ -6,6 +6,8 @@ const text = document.querySelector(".text")
 const openBtnProject = document.querySelector("#openBtn-project")
 const parentContainer = document.querySelector("#parent-project-container")
 const btnClosemodal = document.querySelector("#btnClosemodal")
+const inputSelect = document.querySelector(".input-select")
+const pledgeContainer = document.querySelector("#pledge-container-input")
 openBtn.addEventListener("click", () => {
     parentMenu.classList.add("active")
     openBtn.style.display = "none"
@@ -26,4 +28,7 @@ openBtnProject.addEventListener("click", () => {
 btnClosemodal.addEventListener("click" , () => {
     parentContainer.classList.remove("active")
     // document.body.style.overflow = "auto";
+})
+inputSelect.addEventListener("click", () => {
+    pledgeContainer.classList.toggle("active")
 })
