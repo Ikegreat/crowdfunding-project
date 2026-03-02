@@ -8,6 +8,11 @@ const parentContainer = document.querySelector("#parent-project-container")
 const btnClosemodal = document.querySelector("#btnClosemodal")
 const inputSelect = document.querySelector(".input-select")
 const pledgeContainer = document.querySelector("#pledge-container-input")
+const continueBtn = document.querySelector("#continueBtn")
+const successParentContainer = document.querySelector("#success-parent-container")
+const childProjectContainer = document.querySelector("#child-project-container")
+const gotItBtn = document.querySelector("#Got-itBtn")
+const rewardContainer = document.querySelector("#reward-container")
 openBtn.addEventListener("click", () => {
     parentMenu.classList.add("active")
     openBtn.style.display = "none"
@@ -31,4 +36,19 @@ btnClosemodal.addEventListener("click" , () => {
 })
 inputSelect.addEventListener("click", () => {
     pledgeContainer.classList.toggle("active")
+})
+
+
+continueBtn.addEventListener("click", () => {
+    successParentContainer.classList.add("active")
+    
+    
+    
+   
+})
+
+gotItBtn.addEventListener("click", ()=> {
+    parentContainer.style.display = "none"
+    
+
 })
