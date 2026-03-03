@@ -10,7 +10,8 @@
 </head>
 <body>
   <div id="background-img">
-    <img src="images/image-hero-mobile.jpg" alt="">
+    <img src="images/image-hero-mobile.jpg" alt="" id="mobile-background">
+    <img src="/images/image-hero-desktop.jpg" id="desktop-background">
 
     <header>
       <div class="left-header">
@@ -53,6 +54,8 @@
               <div id="child-project-container">
                 <div id="modal-head">
                   <div id="head">
+                    <div id="overall">
+                    </div>
                     <h4>
                       Back this project
                     </h4>
@@ -75,6 +78,11 @@
                     <input type="radio" id="input"  name="input">
                     <span>Pledge with no reward</span>
                   </div>
+                  <div id="input-box1">
+                    <input type="radio" id="input"  name="input">
+                    <span>Pledge with no reward</span>
+                  </div>
+
                   <h5 id="article-text">
                     Choose to support us without a reward if you 
                     simply believe in our project. As a backer, 
@@ -91,6 +99,24 @@
                    <div id="colored-text">Pledge $25 or more</div>
                    </div>
                   </div>
+                  <div id="flex-input-cnt">
+                    <div id="input-box">
+                       <input type="radio" id="input" name="input"  class="input-select">
+                       <span id="txt">
+                        Bamboo Stand 
+                        <span id="colored-text">Pledge $25 or more</span>
+                       </span>
+                    </div>
+                 
+                 
+                 
+                  </div>
+
+
+
+
+
+
                   <h5 id="article-text">
                     You get an ergonomic stand made of natural
                     bamboo. You've helped us launch our promotional campaign, and
@@ -102,7 +128,6 @@
             </span>
             <span id="left-txt">left</span>
           </div>
-
 
           <!-- Pledge reward container -->
            <div id="pledge-container-input">
@@ -126,32 +151,12 @@
                    </h5>
                    <button id="Got-itBtn">Got it!</button>
 
-
-
                  </div>
-
                </div>
               </div>
-          
-          
           </div>
                 </div>
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
+      
                 <!-- Reward container found inside modal -->
                 <div id="reward-container">
                   <div id="input-box">
@@ -198,28 +203,38 @@
                 </div>
               </div>
             </div>
-            <div id="bkmark-sign">
-              <img src="images/icon-bookmark.svg" alt="" id="bookmarkBtn">
-              <span class="text"></span>
-            </div>
+
+          <div id="bkmark-sign">
+            <img src="images/icon-bookmark.svg" alt="" id="bookmarkBtn">
+            <span class="text"></span>
+          </div>
+          
+           <button id="bkmark-sign1">
+             <span> <img src="images/icon-bookmark.svg" alt="" id="bookmarkBtn"> </span>
+            <span id="text">Bookmark</span>
+           </button>
+          
+          
            </div>
   </div>
   <div id="hero-section-box">
-    <div id="stats">
-      <h1> $89,914</h1>
-      <span>of $100,000 backed</span>
-      <div id="border"></div>
+    <div id="stats-box">
+      <div id="stats">
+        <h1> $89,914</h1>
+        <span>of $100,000 backed</span>
+        <div id="border"></div>
+      </div>
+      <div id="stats">
+        <h1>  5,007 </h1>
+        <span>total backers</span>
+        <div id="border"></div>
+      </div>
+      <div id="stats">
+        <h1>  56 </h1>
+        <span>days left</span>
+      </div>
     </div>
-    <div id="stats">
-      <h1>  5,007 </h1>
-      <span>total backers</span>
-      <div id="border"></div>
-    </div>
-    <div id="stats">
-      <h1>  56 </h1>
-      <span>days left</span>
       <p id="progress-bar"></p>
-    </div>
   </div>
   <div id="hero-section-box">
     <div id="article">
@@ -235,15 +250,16 @@
          helping you stay focused on the task at hand.
       </h5>
       <h5>
-        
   Featuring artisan craftsmanship, the simplicity of design
   creates extra desk space below your computer 
   to allow notepads, pens, and USB sticks to be stored 
   under the stand.
       </h5>
       <div id="reward-container">
-        <h3>Bamboo Stand</h3>
-        <h3 id="colored-text"> Pledge $25 or more</h3>
+        <div id="flex-text">
+          <h3>Bamboo Stand</h3>
+          <h3 id="colored-text"> Pledge $25 or more</h3>
+        </div>
         <h5 id="colored-article">
           You get an ergonomic stand made of natural bamboo.
           You've helped us launch our promotional campaign, and 
@@ -263,8 +279,10 @@
       </div>
     </div>
     <div id="reward-container">
-      <h3> Black Edition Stand</h3>
-      <h3 id="colored-text">Pledge $75 or more</h3>
+      <div id="flex-text">
+        <h3> Black Edition Stand</h3>
+        <h3 id="colored-text">Pledge $75 or more</h3>
+      </div>
       <h5 id="colored-article">
          You get a Black Special Edition computer stand and 
          a personal thank you. You’ll be added to our Backer 
@@ -284,8 +302,11 @@
     </div>
 
     <div id="reward-container">
-      <h3>Mahogany Special Edition</h3>
-      <h3 id="colored-text">Pledge $200 or more</h3>
+      <div id="flex-text">
+        <h3>Mahogany Special Edition</h3>
+        <h3 id="colored-text">Pledge $200 or more</h3>
+
+      </div>
       <h5 id="colored-article">
          You get two Special Edition Mahogany stands, a 
          Backer T-Shirt, and a personal thank you. You’ll be added 
@@ -302,65 +323,8 @@
             <button id="outbounded"> Out of Stock </button>
       </div>
     </div>
-    </div>
-  
-        
-    <!-- 
- 
-  
+    
 
-
-  
-  
-  <!-- Selection modal start -->
-<!-- 
-  
-  Bamboo Stand
-  Pledge $25 or more
-  You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-  you’ll be added to a special Backer member list.
-  101 left -->
-
-  <!-- Selected pledge start -->
-  <!-- Enter your pledge
-  $25
-  Continue -->
-  <!-- Selected pledge end -->
-<!-- 
-  Black Edition Stand
-  Pledge $75 or more
-  You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-  member list. Shipping is included.
-  64 left -->
-
-  <!-- Selected pledge start -->
-  <!-- Enter your pledge
-  $75
-  Continue -->
-  <!-- Selected pledge end -->
-<!-- 
-  Mahogany Special Edition
-  Pledge $200 or more
-  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-  to our Backer member list. Shipping is included.
-  0 left -->
-  
-  <!-- Selected pledge  start -->
-  <!-- Enter your pledge
-  $200
-  Continue -->
-  <!-- Selected pledge end -->
-
-  <!-- Selection modal end -->
-
-  <!-- Success modal start
-
-  Thanks for your support!
-  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-  an email once our campaign is completed.
-  Got it! -->
-
-  <!-- Success modal end -->
 </main>
    <script src="index.js"></script>
 </body>

@@ -13,6 +13,8 @@ const successParentContainer = document.querySelector("#success-parent-container
 const childProjectContainer = document.querySelector("#child-project-container")
 const gotItBtn = document.querySelector("#Got-itBtn")
 const rewardContainer = document.querySelector("#reward-container")
+const bkmarkSign1 = document.querySelector("#bkmark-sign1")
+const text1 = document.querySelector("#text")
 openBtn.addEventListener("click", () => {
     parentMenu.classList.add("active")
     openBtn.style.display = "none"
@@ -41,14 +43,18 @@ inputSelect.addEventListener("click", () => {
 
 continueBtn.addEventListener("click", () => {
     successParentContainer.classList.add("active")
-    
-    
-    
-   
+
+ 
 })
 
 gotItBtn.addEventListener("click", ()=> {
     parentContainer.style.display = "none"
-    
-
+})
+bkmarkSign1.addEventListener("click", () => {
+    bkmarkSign1.classList.toggle("active")
+if (bkmarkSign1.classList.contains("active")) {
+    text1.textContent = "Bookmarked"
+}
+else {text1.textContent = "Bookmark"
+}
 })
