@@ -284,7 +284,7 @@ main {
 #input {
     accent-color:hsl(176, 72%, 28%) ;   
 }
-#input-box1 {display: none;}
+#flex-input-cnt {display: none;}
 #fig-stats-2 {
     display: flex;
     align-items: center;
@@ -380,6 +380,7 @@ border: 2px solid hsl(176, 72%, 28%);
 #success-parent-container.active {
     display: flex;
 }
+.remove-me {display: none;}
 @media(min-width:768px) {
     #desktop-background {
         display: block;
@@ -457,16 +458,7 @@ border: 2px solid hsl(176, 72%, 28%);
    #child-project-container {
     width: 500px;
    }
-   #input-box {
-    display: ;
-   }
-   /* #input-box1 {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-   } */
-   
-
+  
 
 
 

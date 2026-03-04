@@ -43,8 +43,6 @@ inputSelect.addEventListener("click", () => {
 
 continueBtn.addEventListener("click", () => {
     successParentContainer.classList.add("active")
-
- 
 })
 
 gotItBtn.addEventListener("click", ()=> {
