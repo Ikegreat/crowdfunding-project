@@ -376,6 +376,9 @@ border: 2px solid hsl(176, 72%, 28%);
         font-size: 16px;
         margin-top: 30px;
     }
+    button:hover {
+        background-color: hsl(176, 72%, 28%);
+    }
 }
 #success-parent-container.active {
     display: flex;
@@ -458,6 +461,13 @@ border: 2px solid hsl(176, 72%, 28%);
    #child-project-container {
     width: 500px;
    }
+  #success-child {
+    width: 250px;
+    padding: 5px;
+    margin-top: 100px;
+
+  }
+   
   
 
 
