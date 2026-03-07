@@ -15,6 +15,7 @@ const gotItBtn = document.querySelector("#Got-itBtn")
 const rewardContainer = document.querySelector("#reward-container")
 const bkmarkSign1 = document.querySelector("#bkmark-sign1")
 const text1 = document.querySelector("#text")
+const desktopInput =  document.querySelector(".input-select-desktop") 
 openBtn.addEventListener("click", () => {
     parentMenu.classList.add("active")
     openBtn.style.display = "none"
@@ -55,4 +56,8 @@ if (bkmarkSign1.classList.contains("active")) {
 }
 else {text1.textContent = "Bookmark"
 }
+})
+
+desktopInput.addEventListener("click", ()=> {
+    pledgeContainer.classList.toggle("active")
 })

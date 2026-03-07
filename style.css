@@ -384,6 +384,10 @@ border: 2px solid hsl(176, 72%, 28%);
     display: flex;
 }
 .remove-me {display: none;}
+#desktop-input-box {display: none;}
+#mydesktop-pledge {
+    display: none;
+}
 @media(min-width:768px) {
     #desktop-background {
         display: block;
@@ -426,7 +430,8 @@ border: 2px solid hsl(176, 72%, 28%);
             padding: 5px;
             border-radius: 999px;
             background-color:rgba(209, 199, 199, 0.563);
-            font-size: 18px;
+            font-size: 15px;
+            color: hsl(0, 0%, 48%);
             cursor: pointer;
     
         img {
@@ -462,19 +467,55 @@ border: 2px solid hsl(176, 72%, 28%);
     width: 500px;
    }
   #success-child {
-    width: 250px;
+    width: 300px;
     padding: 5px;
-    margin-top: 100px;
-
+    margin-top: 90px;
   }
-   
-  
+  #input-box {
+    display: none;
+  }
 
+#desktop-input-box {
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+#left-desktop-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    span {
+        padding: 0 5px;
+    }
+    input {
+        accent-color:  hsl(176, 72%, 28%);
+    }
+}
+.hide {
+    display: none;
+}
+#pledge-container-input {
+    display: none;
+}
+#pledge-container-input.active {
+    display: flex;
+    align-items: center;
+    input {
+        width: 100px;
+    }
+}
+#right-input {
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 7px;
 
-
-
-
-
+}
+#small {
+    font-size: 13px;
+    color: hsl(0, 0%, 48%);
+}
 
 
 
