@@ -386,7 +386,7 @@ border: 2px solid hsl(176, 72%, 28%);
 .remove-me {display: none;}
 #desktop-input-box {display: none;}
 #mydesktop-pledge {
-    display: none;
+    display: nonen;
 }
 @media(min-width:768px) {
     #desktop-background {
